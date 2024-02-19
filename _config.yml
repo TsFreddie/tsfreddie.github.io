@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: TsFreddie
-email: wuts@tsdo.in
+email: whatis@tsdo.in
 description: >- # this means to ignore newlines until "baseurl:"
-  TsFreddie's Github Pages
+  What is TsFreddie doing?
 twitter_username: TsFreddie
 github_username: TsFreddie
 minimal_mistakes_skin: dark
@@ -29,7 +29,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: CN # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -56,7 +56,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Freddie Kins"
+  name   : "Freddie W"
   avatar : "https://avatars.githubusercontent.com/u/3797859"
   bio    : "Indie Video Game Maker"
   links:
@@ -69,6 +69,12 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/TsFreddie"
+    - label: "Ko-Fi"
+      icon: "fab fa-fw fa-mug-saucer"
+      url: "https://ko-fi.com/tsfreddie"
+    - label: "爱发电"
+      icon: "fab fa-fw fa-circle-dollar-to-slot"
+      url: "https://ko-fi.com/tsfreddie"
 
 footer:
   links:
