@@ -54,38 +54,60 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-polyglot
+
+languages: ["en", "zh"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: true
 
 author:
   name   : "Freddie W"
   avatar : "https://avatars.githubusercontent.com/u/3797859"
-  bio    : "Indie Video Game Maker"
+  bio    :
+    en: Professional Stuff Maker
+    zh-CN: 职业开坑能手
   links:
-    - label: "itch.io"
-      icon: "fab fa-fw fa-itch-io"
-      url: "https://tsfreddie.itch.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/tsfreddie"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/TsFreddie"
-    - label: "Ko-Fi"
-      icon: "fab fa-fw fa-mug-saucer"
-      url: "https://ko-fi.com/tsfreddie"
-    - label: "爱发电"
-      icon: "fab fa-fw fa-circle-dollar-to-slot"
-      url: "https://ko-fi.com/tsfreddie"
+    en:
+      - label: "itch.io"
+        icon: "fa-brands fa-itch-io"
+        url: "https://tsfreddie.itch.io"
+      - label: "Twitter"
+        icon: "fa-brands fa-twitter"
+        url: "https://twitter.com/tsfreddie"
+      - label: "GitHub"
+        icon: "fa-brands fa-github"
+        url: "https://github.com/TsFreddie"
+      - label: "爱发电"
+        icon: "fa-solid fa-bolt"
+        url: "https://afdian.net/a/tsfreddie"
+    zh-CN:
+      - label: "itch.io"
+        icon: "fa-brands fa-itch-io"
+        url: "https://tsfreddie.itch.io"
+      - label: "Twitter"
+        icon: "fa-brands fa-twitter"
+        url: "https://twitter.com/tsfreddie"
+      - label: "GitHub"
+        icon: "fa-brands fa-github"
+        url: "https://github.com/TsFreddie"
+      - label: "Ko-Fi"
+        icon: "fa-solid fa-mug-hot"
+        url: "https://ko-fi.com/tsfreddie"
+      - label: "爱发电"
+        icon: "fa-solid fa-bolt"
+        url: "https://ko-fi.com/tsfreddie"
 
 footer:
   links:
     - label: "itch.io"
-      icon: "fab fa-fw fa-itch-io"
+      icon: "fa-brands fa-itch-io"
       url: "https://tsfreddie.itch.io"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
+      icon: "fa-brands fa-twitter"
       url: "https://twitter.com/tsfreddie"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fa-brands fa-github"
       url: "https://github.com/TsFreddie"
 
 
