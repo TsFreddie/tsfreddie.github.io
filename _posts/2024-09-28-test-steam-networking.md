@@ -12,7 +12,7 @@ tags:
 
 I have worked at several companies who develop multiplayer video game projects. Anyone who's been through the process of developing multiplayer games probably shares the pain of juggling multiple running games at the same time. Just to find out the game still breaks when three or more players are connected during testing.
 
-Regardless of the difficulty of testing multiplayer games. The initial development process still involves launching multiple instances just to see if they connect. During all my past experiences, this stage is usually done locally on a single workstation. Having one socket connect to another local socket involves very little effort: hardcoding "localhost" as the address and click the magical "host" and "connect" test buttons (which you coded yourself of course).
+Regardless of the difficulty of testing multiplayer games. The initial development process still involves launching multiple instances just to see if they connect. During all my past experiences, this stage is usually done locally on a single workstation. Having one socket connect to another local socket involves very little effort: hardcoding "localhost" as the address and click the magical "host" and "connect" test buttons (which you would've coded yourself of course).
 
 However, integrating with target platforms like Steam make things a little bit more complicated.
 
