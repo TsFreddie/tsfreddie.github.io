@@ -12,7 +12,7 @@ tags:
 
 I have worked at several companies who develop multiplayer video game projects. Anyone who's been through the process of developing multiplayer games probably shares the pain of juggling multiple running games at the same time. Just to find out the game still breaks when three or more players are connected during testing.
 
-Regardless of the difficulty of testing multiplayer games. The initial development still involve launching multiple instances just to see if they connects. For all my past experiences, this stage is usually done locally on my workstation. Having one socket connect to another local socket involves very little effort: hardcoding "localhost" as the address and click the magical "host" and "connect" test buttons (which you coded yourself of course).
+Regardless of the difficulty of testing multiplayer games. The initial development process still involves launching multiple instances just to see if they connects. During all my past experiences, this stage is usually done locally on a single workstation. Having one socket connect to another local socket involves very little effort: hardcoding "localhost" as the address and click the magical "host" and "connect" test buttons (which you coded yourself of course).
 
 However, integrating with target platforms like Steam make things a little bit more complicated.
 
@@ -26,7 +26,7 @@ However, integrating with target platforms like Steam make things a little bit m
 
 ## Steam is (not actually) single instanced
 
-By default, you can only open one Steam on your computer. You can open multiple instances of your game and initialize Steamworks SDK on all of them just fine. But once you started trying to send a message to the other instance through Steam Networking, you'll realize Steamworks SDK uses Steam ID as the identifier of the connection source and destination (Example: [SendMessageToUser](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SendMessageToUser)). You might realize the two instances shares the same Steam ID as they are both logged in with the same account.
+By default, you can only open one Steam on your computer. You can open multiple instances of your game and initialize Steamworks SDK on all of them just fine. But once you started trying to send a message to the other instance through Steam Networking, you'll realize Steamworks SDK uses Steam ID as the identifier of the connection source and destination (Example: [SendMessageToUser](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SendMessageToUser)). You might realize the two instances share the same Steam ID as they are both logged in with the same account.
 
 Now, if we could launch two Steam with different accounts, this wouldn't be a problem anymore. Let's figure out how to do exactly that.
 
@@ -54,7 +54,6 @@ You might have guessed it already: all three methods above are actually the same
 
 Believe me, I already tried to do exactly this before. However, searching "testing steam networking" usually leads you to believe you need multiple machines to test your game.
 
-I only found this method after one day I just randomly decided  to search "opening multiple steam" instead. There are quite a few guides on how to do that with the perspective of players who are trying to loggin their game with multiple accounts. Retroactively searching `master_ipc_name_override` and `steam_master_ipc_name_override` in the Steamworks official documentation also give you zero results.
+I only found this method after one day I just randomly decided to search "opening multiple steam" instead. There are quite a few guides on how to do that with the perspective of players who are trying to loggin their game with multiple accounts. After a enviroment variable dump in the second Steam, the solution finally revealed itself to me. Retroactively searching `master_ipc_name_override` and `steam_master_ipc_name_override` in the Steamworks official documentation also give you zero results.
 
 Anyway, I actually can't believe that it took me three years to figure this out. I've been testing our games on multiple machines as informed, or even worse - by calling my friends to help then disappoint them when the new update simply doesn't work. I hope this post can save some friendship in the future like it might have saved mine.
-
