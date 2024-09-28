@@ -56,16 +56,16 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Freddie W"
+  avatar : "https://avatars.githubusercontent.com/u/3797859"
+  bio    : Professional Stuff Maker
   links:
     - label: "itch.io"
       icon: "fa-brands fa-itch-io"
       url: "https://tsfreddie.itch.io"
-    - label: "Twitter"
-      icon: "fa-brands fa-twitter"
-      url: "https://twitter.com/tsfreddie"
+    - label: "X"
+      icon: "fa-brands fa-x-twitter"
+      url: "https://x.com/tsfreddie"
     - label: "GitHub"
       icon: "fa-brands fa-github"
       url: "https://github.com/TsFreddie"
@@ -75,15 +75,15 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "itch.io"
+      icon: "fa-brands fa-itch-io"
+      url: "https://tsfreddie.itch.io"
+    - label: "X"
+      icon: "fa-brands fa-x-twitter"
+      url: "https://x.com/tsfreddie"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      icon: "fa-brands fa-github"
+      url: "https://github.com/TsFreddie"
     - label: "爱发电"
       icon: "fa-solid fa-bolt"
       url: "https://afdian.com/a/tsfreddie"
