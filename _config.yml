@@ -72,6 +72,9 @@ author:
     - label: "爱发电"
       icon: "fa-solid fa-bolt"
       url: "https://afdian.com/a/tsfreddie"
+    - label: "Ko-fi"
+      icon: "fa-solid fa-mug-hot"
+      url: "https://ko-fi.com/tsfreddie"
 
 footer:
   links:
@@ -87,6 +90,9 @@ footer:
     - label: "爱发电"
       icon: "fa-solid fa-bolt"
       url: "https://afdian.com/a/tsfreddie"
+    - label: "Ko-fi"
+      icon: "fa-solid fa-mug-hot"
+      url: "https://ko-fi.com/tsfreddie"
 
 defaults:
   # _posts
