@@ -11,12 +11,12 @@ search: false
 .btn--x-twitter {
   background-color: #0c0c0d;
   color: #fff;
-}
 
-.btn--x-twitter:visited {
-  background-color: #0c0c0d;
-}
+  &:visited {
+    background-color: #0c0c0d;
+  }
 
-.btn--x-twitter:hover {
-  background-color: #18181a;
+  &:hover {
+    background-color: #18181a;
+  }
 }
