@@ -1,6 +1,7 @@
 ---
 permalink: /biggernouis/
 title: "BiggerNouis Assets Licenses"
+author_profile: false
 ---
 
 Credits and licenses of Assets:

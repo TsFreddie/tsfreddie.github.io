@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 search: false
 ---
 
@@ -7,18 +6,4 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-.btn--x-twitter {
-  background-color: #0c0c0d;
-  color: #fff;
-
-  &:visited {
-    background-color: #0c0c0d;
-    color: #fff;
-  }
-
-  &:hover {
-    background-color: #18181a;
-    color: #fff;
-  }
-}
+@import "./custom.scss";

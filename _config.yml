@@ -56,9 +56,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Freddie W"
-  avatar : "https://avatars.githubusercontent.com/u/3797859"
-  bio    : Professional Stuff Maker
+  name: "Freddie W"
+  avatar: "https://avatars.githubusercontent.com/u/3797859"
+  bio: Professional Stuff Maker
   links:
     - label: "itch.io"
       icon: "fa-brands fa-itch-io"
@@ -69,12 +69,15 @@ author:
     - label: "GitHub"
       icon: "fa-brands fa-github"
       url: "https://github.com/TsFreddie"
-    - label: "爱发电"
-      icon: "fa-solid fa-bolt"
-      url: "https://afdian.com/a/tsfreddie"
     - label: "Ko-fi"
       icon: "fa-solid fa-mug-hot"
       url: "https://ko-fi.com/tsfreddie"
+    - label: "爱发电"
+      icon: "fa-solid fa-bolt"
+      url: "https://afdian.com/a/tsfreddie"
+    - label: "博客园"
+      icon: "fa-solid fa-language"
+      url: "https://www.cnblogs.com/tsfreddie"
 
 footer:
   links:
@@ -87,12 +90,15 @@ footer:
     - label: "GitHub"
       icon: "fa-brands fa-github"
       url: "https://github.com/TsFreddie"
-    - label: "爱发电"
-      icon: "fa-solid fa-bolt"
-      url: "https://afdian.com/a/tsfreddie"
     - label: "Ko-fi"
       icon: "fa-solid fa-mug-hot"
       url: "https://ko-fi.com/tsfreddie"
+    - label: "爱发电"
+      icon: "fa-solid fa-bolt"
+      url: "https://afdian.com/a/tsfreddie"
+    - label: "博客园"
+      icon: "fa-solid fa-language"
+      url: "https://www.cnblogs.com/tsfreddie"
 
 defaults:
   # _posts
@@ -113,6 +119,18 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _projects
+  - scope:
+      path: "_projects"
+      type: protfolio
+    values:
+      layout: single
+      author_profile: true
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 category_archive:
   type: liquid
