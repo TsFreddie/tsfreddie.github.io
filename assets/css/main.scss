@@ -6,4 +6,19 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-@import "custom";
+
+// Sharing buttons
+.btn--x-twitter {
+  background-color: #0c0c0d;
+  color: #fff;
+
+  &:visited {
+    background-color: #0c0c0d;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: #18181a;
+    color: #fff;
+  }
+}
