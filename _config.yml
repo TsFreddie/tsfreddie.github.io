@@ -107,9 +107,9 @@ defaults:
       type: posts
     values:
       layout: single
+      wide: true
       author_profile: true
       read_time: true
-      comments: true
       share: true
       related: true
   # _pages
@@ -118,19 +118,8 @@ defaults:
       type: pages
     values:
       layout: single
+      wide: true
       author_profile: true
-  # _projects
-  - scope:
-      path: "_projects"
-      type: protfolio
-    values:
-      layout: single
-      author_profile: true
-
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
 
 category_archive:
   type: liquid
