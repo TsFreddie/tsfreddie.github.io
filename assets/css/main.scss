@@ -169,9 +169,10 @@ search: false
   max-height: calc(100vh - 8em);
   overflow: auto;
   padding-right: 10px;
+  display: none;
 
-  @media (max-width: 48em) {
-    display: none;
+  @media (min-width: 64em) {
+    display: unset;
   }
 }
 
