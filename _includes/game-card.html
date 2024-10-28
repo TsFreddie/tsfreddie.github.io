@@ -1,3 +1,2 @@
-{%- assign id = include.game -%}
-{%- assign game_info = site.data.games[id] -%}
-<div>{{id}}{{game_info.title}}</div>
+{%- assign game = include.game -%}
+<div>all:{{game}};title:{{game.title}}</div>
