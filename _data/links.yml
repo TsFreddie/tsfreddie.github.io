@@ -10,4 +10,5 @@ games:
       - fa-brands fa-android
     host: fa-brands fa-itch-io
     price: Free
-    button: Play Now
+    button: Play
+    button_color: "#fa5c5c"
