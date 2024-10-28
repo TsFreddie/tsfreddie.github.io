@@ -22,3 +22,32 @@ search: false
     color: #fff;
   }
 }
+
+// Game cards
+.game-card {
+  border: 1px #5b6780 solid;
+  border-radius: 5px;
+  background-color: #40485a;
+  height: 167px;
+  overflow: hidden;
+
+  .game-cover {
+    float: left;
+    box-shadow: 0px 0px 10px #0006;
+    height: 167px;
+    width: 210px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .game-info {
+    margin-left: 240px;
+  }
+
+  .game-title {
+    margin-top: 12px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 12px;
+  }
+}

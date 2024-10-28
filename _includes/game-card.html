@@ -1,2 +1,9 @@
 {%- assign game = include.game -%}
-<div>all:{{game}};title:{{game.title}}</div>
+<div class="game-card">
+    <div class="game-cover" style="background-image: url({{game.image}});">
+        <div class="game-info">
+            <div class="game-title">{{game.title}}</div>
+            <div class="game-description">{{game.description}}</div>
+        </div>
+    </div>
+</div>
