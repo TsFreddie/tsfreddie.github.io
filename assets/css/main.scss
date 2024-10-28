@@ -57,7 +57,7 @@ search: false
 
     @media (max-width: 480px) {
       margin-left: 172px;
-      height: 83px;
+      height: 85px;
     }
   }
 
@@ -65,13 +65,13 @@ search: false
     font-size: 24px;
     font-weight: bold;
     margin-top: 12px;
-    height: 72px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     @media (max-width: 480px) {
+      height: 72px;
       font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
