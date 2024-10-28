@@ -1,9 +1,9 @@
 ---
-layout: archive
+layout: archive-bare
 classes: ""
 ---
 
-<aside class="sidebar__right sticky">
+<aside class="sidebar__right sticky stuff-list">
   <h3 class="archive__subtitle">Stuff</h3>
   {%- for stuff in site.data.links["stuff"] -%}
     {% include stuff-item.html stuff=stuff %}
