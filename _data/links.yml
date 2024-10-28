@@ -3,3 +3,10 @@ games:
     description: A Teeworlds / DDraceNetwork themed puzzle game
     image: https://img.itch.zone/aW1nLzUxMjc0MjYucG5n/315x250%23c/A3OUCR.png
     url: https://tsfreddie.itch.io/biggernouis
+    platforms:
+      - fa-brands fa-html5
+      - fa-brands fa-windows
+      - fa-brands fa-linux
+    host: fa-brands fa-itch-io
+    price: Free
+    button: Play Now

@@ -41,13 +41,58 @@ search: false
   }
 
   .game-info {
-    margin-left: 240px;
+    margin-left: 230px;
+    height: 125px;
+    overflow: auto;
   }
 
   .game-title {
-    margin-top: 12px;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     margin-top: 12px;
+  }
+
+  .game-description {
+    font-size: 18px;
+
+    @media (min-width: 80em) {
+      font-size: 16px;
+    }
+
+    @media (min-width: 64em) {
+      font-size: 15px;
+    }
+
+    @media (min-width: 48em) {
+      font-size: 14px;
+    }
+  }
+
+  .game-footer {
+    height: 40px;
+    text-align: right;
+
+    .game-price {
+      height: 32px;
+      line-height: 32px;
+      display: inline-block;
+      border: #252a34;
+      background: #1a1e26;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 5px 0 0 5px;
+    }
+
+    .game-play {
+      height: 32px;
+      line-height: 32px;
+      display: inline-block;
+      font-size: 18px;
+      border-radius: 0 5px 5px 0;
+      margin: 0 0 0 10px;
+      border: #ffffffdd;
+      background: #63981d;
+      color: #fffd;
+    }
   }
 }
