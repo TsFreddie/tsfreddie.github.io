@@ -12,3 +12,10 @@ games:
     price: Free
     button: Play
     button_color: "#fa5c5c"
+stuff:
+  - name: Much Programming Core
+    url: https://tsdo.in/much-programming-core/
+    description: Keyboard programming tool for Vertex CORE
+  - name: Labeler
+    url: https://assetstore.unity.com/packages/tools/utilities/labeler-multiple-tags-for-gameobjects-245807
+    description: Unity utility for adding multiple tags to GameObjects

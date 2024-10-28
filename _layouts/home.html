@@ -3,9 +3,12 @@ layout: archive
 classes: ""
 ---
 
-<!-- <aside class="sidebar__right sticky">
+<aside class="sidebar__right sticky">
   <h3 class="archive__subtitle">Stuff</h3>
-</aside> -->
+  {%- for stuff in site.data.links["stuff"] -%}
+    {% include stuff-item.html stuff=stuff %}
+  {%- endfor -%}
+</aside>
 
 <h3 class="archive__subtitle">My Game<a href="https://tsfreddie.itch.io/" style="float:right;font-size:0.8em;">More</a></h3>
 {%- for game in site.data.links["games"] -%}

@@ -164,3 +164,12 @@ search: false
     }
   }
 }
+
+.stuff-item {
+  font-size: 0.75em;
+  border-radius: 5px;
+
+  .stuff-link {
+    font-weight: bold;
+  }
+}
