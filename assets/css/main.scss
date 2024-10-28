@@ -31,6 +31,10 @@ search: false
   height: 167px;
   overflow: hidden;
 
+  @media (max-width: 480px) {
+    height: 125px;
+  }
+
   .game-cover {
     float: left;
     box-shadow: 0px 0px 10px #0006;
@@ -38,61 +42,115 @@ search: false
     width: 210px;
     background-size: cover;
     background-position: center;
+
+    @media (max-width: 480px) {
+      height: 125px;
+      width: 157px;
+    }
   }
 
   .game-info {
     margin-left: 230px;
     height: 125px;
     overflow: auto;
+
+    @media (max-width: 480px) {
+      height: 83px;
+    }
   }
 
   .game-title {
     font-size: 24px;
     font-weight: bold;
     margin-top: 12px;
+
+    @media (max-width: 480px) {
+      margin-top: 8px;
+      font-size: 20px;
+    }
   }
 
   .game-description {
-    font-size: 18px;
+    font-size: 14px;
 
-    @media (min-width: 80em) {
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+
+    @media (min-width: 48em) {
       font-size: 16px;
     }
 
     @media (min-width: 64em) {
-      font-size: 15px;
+      font-size: 18px;
     }
 
-    @media (min-width: 48em) {
-      font-size: 14px;
+    @media (min-width: 80em) {
+      font-size: 20px;
     }
   }
 
   .game-footer {
     height: 40px;
     text-align: right;
+    white-space: nowrap;
+
+    .game-platforms {
+      vertical-align: middle;
+      display: inline-block;
+      font-size: 14px;
+      padding-right: 2px;
+      letter-spacing: 12px;
+      color: #acc2f2;
+
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
 
     .game-price {
       height: 32px;
-      line-height: 32px;
+      line-height: 30px;
       display: inline-block;
-      border: #252a34;
+      border: 1px #343c4c solid;
       background: #1a1e26;
       font-size: 14px;
       color: #fff;
       border-radius: 5px 0 0 5px;
+      margin: 0;
+      padding: 0 12px;
+      box-sizing: border-box;
+      text-anchor: start;
+      vertical-align: middle;
+      border-right: 0;
     }
 
     .game-play {
       height: 32px;
-      line-height: 32px;
+      line-height: 30px;
       display: inline-block;
       font-size: 18px;
       border-radius: 0 5px 5px 0;
-      margin: 0 0 0 10px;
-      border: #ffffffdd;
-      background: #63981d;
+      margin: 0 10px 0 0;
+      border: 1px #fff4 solid;
+      background: #fa5c5c;
       color: #fffd;
+      padding: 0px 18px;
+      text-decoration: none;
+      box-sizing: border-box;
+      vertical-align: middle;
+      transition: filter 0.2s;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px #0005;
+      border-left: 0;
+
+      &:hover {
+        filter: brightness(1.2);
+      }
+
+      &:focus {
+        outline: none !important;
+      }
     }
   }
 }

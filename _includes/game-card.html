@@ -6,7 +6,6 @@
         <div class="game-description">{{game.description}}</div>
     </div>
     <div class="game-footer">
-        <div class="game-price">{{game.price}}</div>
-        <a class="game-play" href="{{game.url}}">{{game.button}}</a>
+        <div class="game-platforms">{%- for platform in game.platforms -%}<i aria-hidden="true" class="{{platform}}"></i>{%- endfor -%}</div><div class="game-price">{{game.price}}</div><a class="game-play" href="{{game.url}}" target="_blank"><i aria-hidden="true" class="{{game.host}}"></i>{{game.button}}</a>
     </div>
 </div>
