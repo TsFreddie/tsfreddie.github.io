@@ -149,7 +149,7 @@ When the minimap is open, frame rate drops whenever the player moves. Profiling 
 
 ### Decryption Bottleneck
 
-Whenever the game loads an image or audio file - for audio files specifically, whenever audio plays, the game actually loads the audio from scratch again. Chromium is pretty good at caching the file access, but the game's audio is also encrypted. After the game loads the audio file, it decrypts the audio file synchronously. This can be very expensive whenever there is more than one audio playing at the same time. I modified the game to use a decryption worker to decrypt the audio file on a separate thread. This way the decryption is done asynchronously although the worker still only does one decryption at a time. But the decryption routine no longer blocks the main thread.
+Whenever the game loads an image or audio file, the engine also needs to decrypt them. For audio files specifically, whenever audio plays, the game actually loads the audio from scratch again. Chromium is pretty good at caching the file access, but after the file loads, the engine decrypts the audio file synchronously. This can be very expensive whenever there is more than one audio playing at the same time. I modified the game to use a decryption worker to decrypt the audio file on a separate thread. This way the decryption is done asynchronously although the worker still only does one decryption at a time. But the decryption routine no longer blocks the main thread.
 
 ### Sprite Tinting Cache
 
