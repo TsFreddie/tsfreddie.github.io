@@ -19,3 +19,6 @@ stuff:
   - name: Labeler
     url: https://assetstore.unity.com/packages/tools/utilities/labeler-multiple-tags-for-gameobjects-245807
     description: Unity utility for adding multiple tags to GameObjects
+  - name: TeeworldsCN
+    url: https://teeworlds.cn
+    description: The Chinese Teeworlds community website
